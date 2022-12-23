@@ -1,0 +1,98 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - ThucTap2022</title>
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="~/css/site.css" />
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow mb-3">
+
+
+            <div class="TranChu" style="background-color: #007bff;">
+
+                    <ul class="navbar-nav flex-grow-1">
+                    <li class="nav-item">
+                        <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Index">Trang chủ</a>
+                    </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Index">Gửi Tin Nhắn</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Privacy">Quản lý danh bạ</a>
+                        </li>
+                         <li class="nav-item">
+                            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Index">Quản lý nhóm</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Privacy">Phân nhóm</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Index">Thống kê chi tiêt tin nhắn</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Privacy">Trang chủ tin nhắn Brandname</a>
+                        </li>
+                    <li class="nav-item">
+                        <a class="nav-link nav_bar" href="https://www.youtube.com/watch?v=ARrJaSxNx1Y&amp;list=PLXHaiBLboPk7Ek1xLBXjL_IZQ8Vcqn8qR" target="_blank">Video hướng dẫn</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <button class="btn btn-sm btn-dark text-white nav-link" data-toggle="dropdown">
+                            <i class="material-icons align-text-bottom text-warning" style="font-size:1.2rem"></i>
+                            <span class="badge badge-pill badge-warning">1</span>
+                        </button>
+                        <div class="dropdown-menu dropdown-menu-right" style="position: absolute; width: 25rem;">
+                            <h1 class="dropdown-header">
+                                Tin nhắn mới nhất
+                            </h1>
+                            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Privacy">
+                                Ngày gửi: 23/12/2022 07:18:54<br>Nội dung: Thực tập 2022<br>File đính kèm: <br>Số tin nhắn đã gửi: 0<br>Số tin nhắn gửi lỗi: 1<br>
+                            </a>
+                        </div>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <button class="btn btn-dark text-white nav-link dropdown-toggle" data-toggle="dropdown">
+                            Menu
+                        </button>
+                        <div class="dropdown-menu dropdown-menu-right" style="position: absolute;">
+                            <h1 class="dropdown-header">
+                                ADMIN
+                            </h1>
+                            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Privacy">
+                                <i class="material-icons align-text-bottom" style="font-size:1.2rem"></i>
+                                &nbsp;
+                                Đổi mật khẩu
+                            </a>
+                            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Privacy">
+                                <i class="material-icons align-text-bottom" style="font-size:1.2rem"></i>
+                                &nbsp;
+                                Đăng xuất
+                            </a>
+                        </div>
+                    </li>
+                    </ul>
+
+                </div>
+            </div>
+        </nav>
+    </header>
+    <div class="container">
+        <main role="main" class="pb-3">
+            @RenderBody()
+        </main>
+    </div>
+
+    <footer class="border-top footer text-muted">
+        <div class="container">
+            &copy; 2022 - ThucTap2022 - <a asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
+        </div>
+    </footer>
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="~/js/site.js" asp-append-version="true"></script>
+    @RenderSection("Scripts", required: false)
+</body>
+</html>
